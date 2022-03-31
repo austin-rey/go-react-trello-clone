@@ -1,3 +1,7 @@
 # Trello Clone
 
-## Built with GO, PostgreSQL and React
+A simple planning/project management tool based off the popular Trello web application.
+
+Backend: Go V.17
+Frontend: React
+Database: PostgreSQL
