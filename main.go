@@ -5,6 +5,7 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/austin-rey/go-react-trello-clone/board"
 	"github.com/austin-rey/go-react-trello-clone/list"
 	"github.com/austin-rey/go-react-trello-clone/organization"
 	"github.com/austin-rey/go-react-trello-clone/task"
@@ -19,5 +20,6 @@ func main() {
 	organization.SetupRoutes(basePath)
 	task.SetupRoutes(basePath)
 	list.SetupRoutes(basePath)
+	board.SetupRoutes(basePath)
 	log.Fatal(http.ListenAndServe(":5000", nil))
 }
